@@ -10,6 +10,13 @@ Result of [Alura](https://alura.com.br) courses:
 
 ## How to up
 
+- Minikube
+
+```bash
+minikube start --vm-driver=virtualbox
+minikube dashboard
+```
+
 - DB
 
 ```bash
@@ -38,7 +45,11 @@ update produtos set categoria_id = 1;
 ```bash
 kubectl create -f .\app\deployment-aplicacao.yaml
 kubectl create -f .\app\servico-aplicacao.yaml
+```
 
+## How to run
+
+```bash
 minikube get service
 ```
 
